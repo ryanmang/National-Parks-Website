@@ -1,0 +1,11 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<hr />
+        <footer>
+       		<jsp:useBean id="now" class="java.util.Date" />
+            <p>&copy; <fmt:formatDate value="${now}" pattern="yyyy"/> National Parks Geek</p>
+        </footer>
+    </div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

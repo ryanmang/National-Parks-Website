@@ -1,0 +1,92 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><c:out value="${pageTitle}"/> - National Parks Geek</title>
+    
+<!-- Font Awesome -->    
+<script src="https://kit.fontawesome.com/90f55cf75f.js" crossorigin="anonymous"></script>
+
+    <!-- Latest Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+
+<!-- Bootstrap jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+<!-- Our own CSS sheet -->
+<link href="<c:url value="css/site.css"/>" rel="stylesheet" type="text/css" />
+   
+<!-- Google Fonts -->   
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    
+
+
+</head>
+<body>
+  <div class="container">
+  
+<nav class="navbar navbar-expand-md bg-success navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="<c:url value="/" />">
+    <img src="img/npgeeklogo.png" alt="Logo" style="width: 120px; padding-right: 20px;">National Parks Geek
+  </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Favorites">Popular Parks</a>
+      </li>
+      
+             <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+        Select a Park
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=CVNP">Cuyahoga Valley</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=ENP">Everglades</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=GCNP">Grand Canyon</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=GNP">Glacier</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=GSMNP">Great Smoky Mountains</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=GTNP">Grand Teton</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=MRNP">Mount Rainier</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=RMNP">Rocky Mountain</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=YNP">Yellowstone</a>
+        <a class="dropdown-item bg-success" href="ParkDetail?parkcode=YNP2">Yosemite</a>
+      </div>
+    </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" href="Survey">Take Our Survey</a>
+      </li>
+      
+
+      
+    </ul>
+  </div>
+</nav>
+  
+  
+  
+  
+  
+    </div>
+
+    
